@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<head>
-	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-	<meta content="utf-8" http-equiv="encoding">
-	<html>
-	    <body>
-	        <h2>Hello, World!</h2>
-	        <p>Please input something</p>
-            <form id="personalDataForm" autocomplete="off">
-            	<label for="firstname">Name</label>
-                <p><input id="firstname" type="text" onfocus="initForm('personalDataForm') "onblur="validateForm('firstname')"></p>
-                <label for="lastname">Surname</label>
-                <p><input id="lastname" type="text" onblur="validateForm('lastname')"></p>
-                <label for="age">Age</label>
-				<p><input id="age" type="text" onblur="validateForm('age')"></p>
-				<label for="mail">Mail</label>
-                <p><input id="mail" type="text" onblur="validateForm('mail')"></p>
-                <p><button type="button" onclick="add_fields('personalDataTable')">Add</button></p>
-            </form>
-	        <table id="personalDataTable"style="width:50%">
-			 	<tr> 
-			    	<th>Firstname</th>
-			    	<th>Lastname</th>
-			    	<th>Age</th>
-			    	<th>Mail</th>
-			  	</tr>
-			  	<tr>
-			    	<td>Jill</td>
-			    	<td>Smith</td>
-			    	<td>50</td>
-			    	<td>Jill@Jill.com</td>
-			  	</tr>
-			  	<tr>
-			    	<td>Eve</td>
-			    	<td>Jackson</td>
-			    	<td>94</td>
-			    	<td>eve@eve.com</td>
-			  	</tr>
-			</table>
-	        <script src="3.js"></script>
-	    </body>
-	</html>
-</head>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<script src="3.js"></script>
+	</head>
+	<body>
+		<h2>Hello, World!</h2>
+		<p>Please input something</p>
+		<form id="personalDataForm" autocomplete="off">
+			<label for="firstname">Name</label>
+			<p><input id="firstname" type="text" onfocus="initForm('personalDataForm') "onblur="validateForm('firstname')"></p>
+			<label for="lastname">Surname</label>
+			<p><input id="lastname" type="text" onblur="validateForm('lastname')"></p>
+			<label for="age">Age</label>
+			<p><input id="age" type="text" onblur="validateForm('age')"></p>
+			<label for="mail">Mail</label>
+			<p><input id="mail" type="text" onblur="validateForm('mail')"></p>
+			<p><button type="button" onclick="add_fields('personalDataTable')">Add</button></p>
+		</form>
+		<table id="personalDataTable"style="width:50%">
+			<tr> 
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Age</th>
+				<th>Mail</th>
+			</tr>
+			<tr>
+				<td>Jill</td>
+				<td>Smith</td>
+				<td>50</td>
+				<td>Jill@Jill.com</td>
+			</tr>
+			<tr>
+				<td>Eve</td>
+				<td>Jackson</td>
+				<td>94</td>
+				<td>eve@eve.com</td>
+			</tr>
+		</table>
+	</body>
+</html>

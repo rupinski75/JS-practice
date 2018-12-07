@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
-    <html>
-        <body>
-            <h2>Temperature converter</h2>
-            <p>Please input temperature</p>
-            <form id="convertForm" autocomplete="off">
-                <p><input id="celcius" type="number" oninput="convert('C')"></p>
-                <p><input id="fahrenhet" type="number" oninput="convert('F')"></p>
-            </form>
-            <p id="converter"></p>
-            <script src="convert.js"></script>
-        </body>
-    </html>
-</head>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <script src="convert.js"></script>
+    </head>
+    <body>
+        <h2>Temperature converter</h2>
+        <p>Please input temperature</p>
+        <form id="convertForm" autocomplete="off">
+            <p><input id="celcius" type="number" oninput="convert('C')"></p>
+            <p><input id="fahrenhet" type="number" oninput="convert('F')"></p>
+        </form>
+        <p id="converter"></p>
+    </body>
+</html>
+
 
