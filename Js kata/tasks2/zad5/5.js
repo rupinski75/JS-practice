@@ -53,7 +53,7 @@ function newStudent() {
         document.getElementById('firstname').value,
         document.getElementById('lastname').value,
         document.getElementById('id').value,
-        Array.from(String(document.getElementById('grades').value).split(/ |, |,/)));
+        Array.from(String(document.getElementById('grades').value).split(/ |, |,/g)));
 }
 function updateStudent(id) {
     var student = students[id];
@@ -66,8 +66,8 @@ function updateStudent(id) {
     `<td>${student.firstName}</td>
     <td>${student.lastName}</td>
     <td>${student.id}</td>
-    <td id="average_${student.id}">${student.countAverage()}</td>
     <td id="grades_${student.id}">${student.grades}</td>
+    <td id="average_${student.id}">${student.countAverage()}</td>
     <td><button type="button" onclick="edit(${student.id})">Edit</button></td>
     <td><button type="button" onclick="showAddGrades('${student.id}')">Add grades</button></td>`
 }
