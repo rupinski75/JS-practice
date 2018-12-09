@@ -5,7 +5,11 @@ window.onload =  function(){
 function delayedMessage() {
 	setTimeout(
 		function(){
-			document.getElementById("p1").innerHTML = "Have a good day!";
+			const paragraph = document.createElement("p");
+			const node = document.createTextNode("Have a good day!");
+			paragraph.appendChild(node);
+			const element = document.getElementById("div1");
+			element.appendChild(paragraph);
 		},
 		5000);
 }
